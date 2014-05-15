@@ -1,0 +1,468 @@
+/* FONT */
+
+
+@font-face {
+
+    font-family: 'BebasNeueRegular';
+    src: url('fonts/BebasNeue-webfont.eot');
+    src: url('fonts/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/BebasNeue-webfont.woff') format('woff'),
+         url('fonts/BebasNeue-webfont.ttf') format('truetype'),
+         url('fonts/BebasNeue-webfont.svg#BebasNeueRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+
+}
+
+body {
+	overflow:scroll; 		/* needed to eliminate scrollbars caused by the background image */
+	padding:0;margin:0;		/* necesarry for the raster to fill the screen */
+	height:100%;width:100%;
+
+}
+
+/*.mediakit {
+	background:#fff none;
+}
+
+.mediakit #trame{
+	background:#fff none;
+}
+
+.mediakit #content{
+	background:#fff none;
+}      */
+
+
+
+.mediakit .code{
+	border:none;
+	background:rgba(255,255,255,0.8) none;
+	float:left;
+	width:180px;
+	height:187px;
+	display:block;
+	margin:20px 0 0 0;	
+	padding:10px 10px;
+}
+
+.mediakit .baniere{
+	clear:both;
+	float:left;
+	margin:20px 10px 0 0;
+}
+
+a img {
+	margin:0;
+	border:0;
+}
+
+.clear{
+	clear:both;
+}
+
+.hidden{
+	display:none;
+}
+
+#bgimg {
+	position:fixed;
+	z-index: -1;
+}
+
+#realBody{
+	position:absolute;
+	z-index: 5;				/* Place the new body above the background image */
+	overflow:auto; 			/* restore scrollbars for the content */
+	height:100%;width:100%;	/* Make the new body fill the screen */
+	background: url('../img/raster.png'); /* this is just a fancy raster, you can remove it; I kinda like it though */
+}
+
+
+body{
+	background-color:#000;
+	color:#fff;
+	font-family: "helvetica", arial, sans-serif;
+	font-size:14px;
+
+}
+
+h1, .h1-like {
+	font-size:16px;
+	color:#fff; 
+	
+
+}
+
+
+
+h1, h2, .h1-like, .h2-like {
+    font:47px/45px 'BebasNeueRegular',helvetica, Arial,sans-serif;
+	text-transform: uppercase;
+	margin:0;
+	padding:0;
+}
+h3, .h3-like {
+    font:25px/21px 'BebasNeueRegular',helvetica, Arial,sans-serif;
+}
+
+#lang-ch h3{
+	line-height:27px;
+}
+
+#lang-vi h1, #lang-vi h2, #lang-vi .h1-like, #lang-vi .h2-like {
+    font:22px/24px helvetica, Arial,sans-serif;
+	text-transform: uppercase;
+	margin:0;
+	padding:0;
+	font-family:900;
+}
+#lang-vi h3, #lang-vi .h3-like {
+    font:16px/18px helvetica, Arial,sans-serif;
+}
+
+
+#lang-fr #btn-fr, #lang-en #btn-en, #lang-ch #btn-ch, #lang-vi #btn-vi{
+	color:#DB002F;
+	text-decoration:none;
+}
+
+
+h1 span, h2 span, h3 span, .h1-like span, .h2-like span, .h1-like span {
+	color:#DB002F;
+}
+
+          
+a {
+	color:#fff;
+}
+
+#trame {
+	background: transparent url("i/trame.png") repeat 0 0 scroll;
+	padding:120px 0 0;
+	display:block;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	top: 0;
+	float:left;
+	width:100%;
+}
+
+
+#wrap {
+	max-width:1000px;                                                          
+	margin:0 auto;
+	overflow:hidden;
+}
+
+#fields {
+	background: transparent url("i/ff.png") repeat 0 0 scroll;
+	float:left;
+}
+
+.mediakit #fields {
+	background: transparent none;
+}
+
+
+strong{
+	text-transform:uppercase;
+}
+
+#content{
+	float:left;
+	padding:20px 1.5% 0;
+	font-size:13px;
+	position:relative;
+	width:63%; 
+	color:#fff;
+	height:100%;
+}
+
+
+
+
+
+#signin{
+	background: transparent url("i/ff.png") repeat 0 0 scroll;
+    padding:43px 0 200px 3%;
+	float:right;
+	width:31%;
+	height:100%;
+
+}
+
+
+#signin h2{
+	padding:18px 23px;
+	margin-left:-10px;
+	background-color: #DB002F;
+	font-size:1.8em;
+	text-align:center;
+}
+
+
+#more{
+	display: block;
+	width: 145px;
+
+	font-size: 14px;
+	font-weight: 900;
+	text-decoration: none;
+	padding: 0 10px 0;
+	text-align: center;
+	margin:0 0 45px;
+	color: #000;
+	background-color: #fff;
+}
+
+#more:hover{
+	color: white;
+	background-color: #DB002F;
+}
+
+
+
+
+#signin select{
+	width:80%;
+}
+
+#signin input{
+	width:80%;
+	padding:6px 8px;
+	margin:0 0 4px;
+	color:#444;
+	border:none;
+	border-left: 4px solid  #fff;
+	background-color:#fff;
+	background-color:rgba(255,255,255,0.9);
+}
+
+#signin input.need {
+	color:#000;
+	border-left: 4px solid  #DB002F;
+}
+#signin input:hover{
+	background-color:#fff;
+}	
+
+ #signin .submit, #btndon{
+	color: white;
+	background-color: #DB002F;
+	font-size: 20px;
+	font-weight: 900;
+	text-decoration: none;
+	padding: 7px 20px;
+	text-align: center;
+	border:none;
+	text-transform: uppercase;
+	width:71%;
+	display:block;
+    font:28px/23px 'BebasNeueRegular',helvetica, Arial,sans-serif;
+}
+
+#lang-vi #signin .submit,#lang-vi #btndon{
+    font:28px/23px helvetica, Arial,sans-serif;
+}
+
+ #signin a.submit:hover, #btndon:hover{
+	color: #000;
+	background-color: #fff;
+	cursor:pointer;
+}
+.step2{
+	width:94%;
+	padding:0 2%;
+	float:left;
+	
+}
+
+.optin-oui, .optin-non{
+	width:43%;
+	padding:3% 0;
+	margin:0 2% 0 0;
+	float:left;
+	display:block;
+    font:28px/23px 'BebasNeueRegular',helvetica, Arial,sans-serif;
+	text-align:center;
+	text-decoration:none;
+}
+
+.optin-oui {
+	background-color: #DB002F;
+	color:#fff;
+}
+
+.optin-oui:hover{ 
+	background-color: #eee;
+	color:#000;
+}
+.optin-non:hover{
+	background-color: #aaa;
+	color:#444;
+}
+#jauge {
+	width:80%;
+	height:12px;
+	background-color: #fff;
+	border:5px solid #fff;
+	margin:0 5px 10px;
+}
+#jauge div{
+	width:20%;
+	height:12px;
+ 	background: #DB002F url("i/bar.gif") repeat 0 0 scroll;
+}
+#radio {
+	display:inline;
+	width:20px!important;
+	background:none;
+	} 
+	
+
+	
+.email{
+	border: 1px lightGrey solid;
+	background-color: #F2F2F2;
+	width: 225px;
+}
+	
+#bar {
+	position:absolute;
+	top:0;
+	right:0;
+	width:100%;
+	height:20px;
+	float:left;
+	background-color:#000;               
+	padding:10px 20px;
+	text-align:right;
+}
+#logo {
+	position: absolute;
+	top: 0;
+	margin: 0 0 0 -76px;
+}     
+
+
+
+.merci #wrap {
+	color:#000;
+}
+
+
+
+.merci, .merci #trame {
+	background: #fff none;
+}
+
+.merci #wrap{ 
+	max-width: 450px;
+	background: #fff none;
+}
+.merci #content, .thanks #content{     
+	width:78%;          
+	padding:20px 5% 0;
+}
+
+
+
+.merci h1, .h1-like {
+	color:#000;
+}
+
+.merci .give {
+	width:47%;
+	float : left;
+
+}
+
+.merci .give p{
+	line-height:41px;
+}
+
+.merci #btndon {
+	width:50%;
+	float : left;
+	padding:67px 0;
+	font-size:50px;
+	height:20px;
+	-moz-box-shadow: inset 0px 0px 10px 3px #930F1C;
+	-webkit-box-shadow: inset 0px 0px 10px 3px #930F1C;
+	-o-box-shadow: inset 0px 0px 10px 3px #930F1C;
+	box-shadow: inset 0px 0px 10px 3px #930F1C;
+	filter:progid:DXImageTransform.Microsoft.Shadow(color=#930F1C, Direction=NaN, Strength=10);
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.merci #btndon:hover {
+	-moz-box-shadow: inset 0px 0px 10px 3px #aaa;
+	-webkit-box-shadow: inset 0px 0px 10px 3px #aaa;
+	-o-box-shadow: inset 0px 0px 10px 3px #aaa;
+	box-shadow: inset 0px 0px 10px 3px #aaa;
+
+}
+
+
+
+.merci #jauge {
+	float:right;
+	border:1px solid #000 ;
+	width:49%;
+	margin-right:28px;
+	
+	-moz-box-shadow: inset 0px 0px 2px 1px #aaa;
+	-webkit-box-shadow: inset 0px 0px 2px 1px #aaa;
+	-o-box-shadow: inset 0px 0px 2px 1px #aaa;
+	box-shadow: inset 0px 0px 2px 1px #aaa;
+	filter:progid:DXImageTransform.Microsoft.Shadow(color=#aaa, Direction=NaN, Strength=2);
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.merci #jauge, .merci #jauge div {
+	height:18px;
+}
+
+
+
+.merci .share {
+	line-height:20px;
+}
+
+
+@media (min-width:700px) {
+	#fields {
+	    margin-left:33%;
+	}	
+	
+
+	
+}
+@media (max-width:700px) {
+	#bgimg {
+		left:-40px!important;
+	}   
+	#content{
+			width:96%;
+			margin:0 auto;
+	}
+
+	#signin{
+		width:96%;
+		margin:0 auto;	}	
+	#wrap {
+		width:96%;
+		margin:200px auto;		
+	}
+	#logo {
+		margin: 00;
+	}
+	
+}
